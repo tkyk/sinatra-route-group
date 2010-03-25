@@ -24,14 +24,14 @@ Gem::Specification.new do |s|
      "Rakefile",
      "VERSION",
      "lib/sinatra/route_group.rb",
+     "sinatra-route-group.gemspec",
      "test/helper.rb",
      "test/test_sinatra-route-group.rb"
   ]
-  s.has_rdoc = true
   s.homepage = %q{http://github.com/tkyk/sinatra-route-group}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.3.1}
+  s.rubygems_version = %q{1.3.6}
   s.summary = %q{A Sinatra extension for grouping routes}
   s.test_files = [
     "test/helper.rb",
@@ -40,17 +40,14 @@ Gem::Specification.new do |s|
 
   if s.respond_to? :specification_version then
     current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
-    s.specification_version = 2
+    s.specification_version = 3
 
     if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
       s.add_development_dependency(%q<thoughtbot-shoulda>, [">= 0"])
-      s.add_development_dependency(%q<thoughtbot-shoulda>, [">= 0"])
     else
-      s.add_dependency(%q<thoughtbot-shoulda>, [">= 0"])
       s.add_dependency(%q<thoughtbot-shoulda>, [">= 0"])
     end
   else
-    s.add_dependency(%q<thoughtbot-shoulda>, [">= 0"])
     s.add_dependency(%q<thoughtbot-shoulda>, [">= 0"])
   end
 end
