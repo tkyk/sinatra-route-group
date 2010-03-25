@@ -5,8 +5,8 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "sinatra-route-group"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{A Sinatra extension for grouping routes}
+    gem.description = %Q{#{gem.summary}. See README for more details.}
     gem.email = "i@tkyk.name"
     gem.homepage = "http://github.com/tkyk/sinatra-route-group"
     gem.authors = ["Takayuki Miwa"]
