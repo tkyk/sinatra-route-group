@@ -1,6 +1,24 @@
 = sinatra-route-group
 
-Description goes here.
+A sinatra extension for grouping routes and executing before filters separately.
+
+  require 'rubygems'
+  require 'sinatra'
+  require 'sinatra/route_group'
+  
+  group(:protected) do
+    before_filter do
+      protected!
+    end
+
+    get '/foo' do
+      "This route is protected."
+    end
+  end
+  
+  get '/' do
+    "This route is not protected."
+  end
 
 == Note on Patches/Pull Requests
  
